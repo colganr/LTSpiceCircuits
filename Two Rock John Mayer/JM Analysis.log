@@ -45,8 +45,8 @@ Source stepping succeeded in finding the operating point.
 .step wiper=0.9
 .step wiper=1
 
-Date: Thu Oct 11 13:12:40 2018
-Total elapsed time: 12.305 seconds.
+Date: Fri Oct 12 10:41:05 2018
+Total elapsed time: 12.430 seconds.
 
 tnom = 27
 temp = 27
@@ -59,5 +59,5 @@ rejected = 0
 matrix size = 302
 fillins = 1672
 Matrix Compiler1:   14563 opcodes
-Matrix Compiler2: 56.56 KB object code size  6.7/7.6/[3.9]
+Matrix Compiler2: 56.56 KB object code size  6.6/7.7/[4.0]
 
