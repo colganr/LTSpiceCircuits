@@ -1,4 +1,4 @@
-*
+* 
 * Transformer Specified With Inductance Per Coil
 * "Primary" inductance    L1, series resistor R1
 * "Secondary" inductance  L2, series resistor R2
@@ -11,4 +11,4 @@ L1 1 2 {L1}  Rser={R1}
 L2 3 4 {L2}  Rser={R2}
 K12 L1 L2 {K}
 *
-.ENDS
+.ENDS 

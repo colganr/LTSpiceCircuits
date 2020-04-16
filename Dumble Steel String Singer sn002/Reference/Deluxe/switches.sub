@@ -1,0 +1,24 @@
+* Simple Switches
+* Martin Sadler
+*
+* SET = 0, switch off
+* SET = 1, Switch on
+
+.subckt spst 1 2
+Rsw12 1 2 {1T*(1-SET)+.001}
+.ends spst
+
+.subckt spdt 1 2 3
+Rsw12 1 2 {1T*(1-SET)+.001}
+Rsw13 1 3 {1T*SET+.001}
+Rsw23 2 3 {1T}
+.ends spdt
+
+.subckt dpdt 1a 2a 3a 1b 2b 3b
+Rswa12 1a 2a {1T*(1-SET)+.001}
+Rswa13 1a 3a {1T*SET+.001}
+Rswa23 2a 3a {1T}
+Rswb12 1b 2b {1T*(1-SET)+.001}
+Rswb13 1b 3b {1T*SET+.001}
+Rswb23 2b 3b {1T}
+.ends dpdt

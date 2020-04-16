@@ -1,0 +1,46 @@
+Version 4
+SymbolType CELL
+LINE Normal -8 48 0 64
+LINE Normal 8 48 -8 48
+LINE Normal 0 64 8 48
+LINE Normal 0 -80 0 48
+CIRCLE Normal 8 -8 -8 8
+ARC Normal -80 -80 81 80 16 80 16 79
+ARC Normal -80 -80 81 80 -64 -48 16 79
+TEXT -57 -41 Left 2 1
+TEXT -70 -14 Left 2 2
+TEXT -72 13 Left 2 3
+TEXT -59 38 Left 2 4
+TEXT -43 54 Left 2 5
+TEXT -18 65 Left 2 6
+TEXT 9 65 Left 2 7
+WINDOW 0 4 -56 Left 2
+WINDOW 39 4 -33 Left 2
+SYMATTR SpiceLine POS=1
+SYMATTR Prefix X
+SYMATTR Value Switch7Pos1Pole
+SYMATTR ModelFile Switch7Pos1Pole.sub
+PIN 0 -80 NONE 8
+PINATTR PinName 1
+PINATTR SpiceOrder 1
+PIN -64 -48 NONE 8
+PINATTR PinName 2
+PINATTR SpiceOrder 2
+PIN -80 -16 NONE 8
+PINATTR PinName 3
+PINATTR SpiceOrder 3
+PIN -80 16 NONE 8
+PINATTR PinName 4
+PINATTR SpiceOrder 4
+PIN -64 48 NONE 8
+PINATTR PinName 5
+PINATTR SpiceOrder 5
+PIN -48 64 NONE 8
+PINATTR PinName 6
+PINATTR SpiceOrder 6
+PIN -16 80 NONE 8
+PINATTR PinName 7
+PINATTR SpiceOrder 7
+PIN 16 80 NONE 8
+PINATTR PinName 8
+PINATTR SpiceOrder 8
