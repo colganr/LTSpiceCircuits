@@ -179,7 +179,7 @@ R51 N074 0 470k
 * .STEP LIN PARAM TREB 0.0  1.0 0.5
 * .STEP LIN PARAM VOL 0.1  1.0 0.1
 .PARAM  VOL=0.5
-* Dumble Steel String Singer #002\nLTspice Schematic Ryan Colgan\nwww.TheToneGeek.com
+* Dumble Steel String Singer #002\nLTspice Schematic Ryan Colgan & The Amp Garage\nwww.TheToneGeek.com https://ampgarage.com/
 .INC VCRA.INC
 .INC transPPC.INC
 .param REV=1 REVRET=0.5 REVSEND=0.5
