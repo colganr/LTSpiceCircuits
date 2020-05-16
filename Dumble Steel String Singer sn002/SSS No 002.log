@@ -13,40 +13,33 @@ Gmin = 0.115292
 Gmin = 0.0123794
 Gmin = 0.00132923
 Gmin = 0.000142725
-Gmin = 1.5325e-05
-Gmin = 1.6455e-06
-Gmin = 1.76685e-07
-Gmin = 1.89714e-08
-Gmin = 2.03704e-09
-Gmin = 2.18725e-10
-Gmin = 2.34854e-11
-Gmin = 2.52173e-12
-Gmin = 2.70769e-13
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+Gmin = 1.89714e-008
+Gmin = 2.03704e-009
+Gmin = 2.18725e-010
+Gmin = 2.34854e-011
+Gmin = 2.52173e-012
+Gmin = 2.70769e-013
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
-.step pos=1
-.step pos=2
-.step pos=3
-.step pos=4
-.step pos=5
-.step pos=6
-.step pos=7
 
-Date: Fri Apr 17 08:49:44 2020
-Total elapsed time: 1.402 seconds.
+Date: Fri May 15 20:37:44 2020
+Total elapsed time: 0.304 seconds.
 
 tnom = 27
 temp = 27
 method = trap
-totiter = 435
+totiter = 424
 traniter = 0
 tranpoints = 0
 accept = 0
 rejected = 0
 matrix size = 196
-fillins = 273
+fillins = 269
 solver = Normal
-Matrix Compiler1:    1763 opcodes
-Matrix Compiler2: 21.48 KB object code size  3.5/4.2/[2.0]
+Matrix Compiler1:    1755 opcodes
+Matrix Compiler2: 21.41 KB object code size  3.7/4.3/[2.1]
 
