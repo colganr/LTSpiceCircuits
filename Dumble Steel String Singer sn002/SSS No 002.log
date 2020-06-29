@@ -26,8 +26,8 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Tue Jun 23 11:36:52 2020
-Total elapsed time: 0.829 seconds.
+Date: Mon Jun 29 10:41:59 2020
+Total elapsed time: 0.715 seconds.
 
 tnom = 27
 temp = 27
@@ -41,5 +41,5 @@ matrix size = 194
 fillins = 259
 solver = Normal
 Matrix Compiler1:    1708 opcodes
-Matrix Compiler2: 21.20 KB object code size  3.6/4.4/[1.9]
+Matrix Compiler2: 21.20 KB object code size  3.6/4.3/[2.1]
 
