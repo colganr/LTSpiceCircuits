@@ -1,0 +1,4 @@
+Circuit: * C:\Users\ryan\Documents\GitHub\LTSpiceCircuits\Dumble Steel String Singer sn002\Draft1.asc
+
+Fatal Error: Unknown subcircuit called in:
+   xu1 n001 0 n002 pot_lin rtot=10k wiper=.5 rtap=1k tap=0.5
