@@ -1,6 +1,6 @@
 Circuit: * C:\Users\ryan\Documents\GitHub\LTSpiceCircuits\Dumble Steel String Singer sn002\SSS No 002.asc
 
-WARNING: Node N050 is floating.
+WARNING: Node N051 is floating.
 
 WARNING: Less than two connections to node NC_01.  This node is used by R:U32:2.
 WARNING: Less than two connections to node NC_02.  This node is used by R60.
@@ -26,8 +26,8 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Sat Sep 12 14:57:44 2020
-Total elapsed time: 0.488 seconds.
+Date: Thu Apr 29 20:40:30 2021
+Total elapsed time: 0.234 seconds.
 
 tnom = 27
 temp = 27
@@ -38,8 +38,8 @@ tranpoints = 0
 accept = 0
 rejected = 0
 matrix size = 194
-fillins = 266
+fillins = 324
 solver = Normal
-Matrix Compiler1:    1752 opcodes
-Matrix Compiler2: 21.39 KB object code size  3.3/4.3/[2.0]
+Matrix Compiler1:    2049 opcodes
+Matrix Compiler2: 22.40 KB object code size  3.3/3.9/[1.8]
 
