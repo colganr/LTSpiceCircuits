@@ -1,5 +1,5 @@
-http transferring http://tdsl.duncanamps.com/dcigna/tubes/spice/6l6gc.inc to C:\Users\ryan\Documents\GitHub\LTSpiceCircuits\Two Rock John Mayer\6l6gc.inc
-Circuit: * C:\Users\ryan\Documents\GitHub\LTSpiceCircuits\Two Rock John Mayer\JM Analysis.asc
+http transferring http://tdsl.duncanamps.com/dcigna/tubes/spice/6l6gc.inc to C:\Users\ryan\Documents\GitHub\LTSpiceCircuits\Dumble Steel String Singer sn004\6l6gc.inc
+Circuit: * C:\Users\ryan\Documents\GitHub\LTSpiceCircuits\Dumble Steel String Singer sn004\JM Analysis.asc
 
 WARNING: Less than two connections to node NC_01.  This node is used by R58.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
@@ -42,8 +42,8 @@ Source stepping succeeded in finding the operating point.
 .step wiper=0.9
 .step wiper=1
 
-Date: Sat Mar 28 08:17:12 2020
-Total elapsed time: 9.004 seconds.
+Date: Tue May 25 15:53:35 2021
+Total elapsed time: 9.186 seconds.
 
 tnom = 27
 temp = 27
@@ -57,5 +57,5 @@ matrix size = 302
 fillins = 561
 solver = Normal
 Matrix Compiler1:    3788 opcodes
-Matrix Compiler2: 30.02 KB object code size  4.1/5.2/[2.1]
+Matrix Compiler2: 30.02 KB object code size  3.6/4.8/[2.1]
 
