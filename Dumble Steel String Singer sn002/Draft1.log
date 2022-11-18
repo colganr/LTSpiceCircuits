@@ -1,4 +1,74 @@
 Circuit: * C:\Users\ryan\Documents\GitHub\LTSpiceCircuits\Dumble Steel String Singer sn002\Draft1.asc
 
-Fatal Error: Unknown subcircuit called in:
-   xu1 n001 0 n002 pot_lin rtot=10k wiper=.5 rtap=1k tap=0.5
+WARNING: Node NC_01 is floating.
+
+WARNING: Less than two connections to node NC_01.  This node is used by R5.
+Ignoring empty pin current: Ix(u3:1)
+Ignoring empty pin current: Ix(u3:2)
+.step treble=0
+.step treble=0.02
+.step treble=0.04
+.step treble=0.06
+.step treble=0.08
+.step treble=0.1
+.step treble=0.12
+.step treble=0.14
+.step treble=0.16
+.step treble=0.18
+.step treble=0.2
+.step treble=0.22
+.step treble=0.24
+.step treble=0.26
+.step treble=0.28
+.step treble=0.3
+.step treble=0.32
+.step treble=0.34
+.step treble=0.36
+.step treble=0.38
+.step treble=0.4
+.step treble=0.42
+.step treble=0.44
+.step treble=0.46
+.step treble=0.48
+.step treble=0.5
+.step treble=0.52
+.step treble=0.54
+.step treble=0.56
+.step treble=0.58
+.step treble=0.6
+.step treble=0.62
+.step treble=0.64
+.step treble=0.66
+.step treble=0.68
+.step treble=0.7
+.step treble=0.72
+.step treble=0.74
+.step treble=0.76
+.step treble=0.78
+.step treble=0.8
+.step treble=0.82
+.step treble=0.84
+.step treble=0.86
+.step treble=0.88
+.step treble=0.9
+.step treble=0.92
+.step treble=0.94
+.step treble=0.96
+.step treble=0.98
+.step treble=1
+
+Date: Fri Aug 19 08:39:39 2022
+Total elapsed time: 1.700 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 0
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 10
+fillins = 1
+solver = Normal
+
