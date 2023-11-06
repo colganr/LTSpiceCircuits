@@ -1,0 +1,33 @@
+* C:\Users\ryan\Documents\GitHub\LTSpiceCircuits\Super-Puss\Draft1.asc
+V1 INPUT 0 SINE(0 .132 1k)
+V2 +9V 0 9
+D1 +9V N001 1N5817
+C1 N001 0 0.1µ V=50 Irms=835m Rser=0.0936732 Lser=0 mfg="KEMET" pn="C1812C104K5RAC" type="X7R"
+C2 VA 0 220µ V=35 Irms=570m Rser=0.123 Lser=20.8n mfg="Würth Elektronik" pn="865080553014 WCAP-ASLI 8x10,5" type="Al electrolytic"
+C3 VB 0 220µ V=35 Irms=570m Rser=0.123 Lser=20.8n mfg="Würth Elektronik" pn="865080553014 WCAP-ASLI 8x10,5" type="Al electrolytic"
+C4 VC 0 220µ V=35 Irms=570m Rser=0.123 Lser=20.8n mfg="Würth Elektronik" pn="865080553014 WCAP-ASLI 8x10,5" type="Al electrolytic"
+R1 N001 VA 100 tol=1 pwr=0.125
+R2 N001 VB 100 tol=1 pwr=0.125
+R3 N001 VC 100 tol=1 pwr=0.125
+J1 N003 N004 N005 J201
+R4 N004 INPUT 22K tol=1 pwr=0.1
+R5 0 INPUT 1m
+C5 N004 0 220p V=25 Irms=0 Rser=0.5863 Lser=330p mfg="Würth Elektronik" pn="885012206055 WCAP-CSGP 0603" type="X7R"
+R6 N005 0 1.5k tol=1 pwr=0.1
+C6 N005 0 4.7µ V=16 Irms=12m Rser=2.7041 Lser=1.39n mfg="Würth Elektronik" pn="865250340002 WCAP-ASNP 4x5,5" type="Al electrolytic"
+R7 N002 N003 15K tol=1 pwr=0.1
+R8 VA N002 9.5k
+R9 N003 N006 100k
+C7 NC_01 N003 0.001µ V=25 Irms=0 Rser=0.2145 Lser=153p mfg="Würth Elektronik" pn="885012205044 WCAP-CSGP 0402" type="X7R"
+C8 N006 N007 0.047µ V=100 Irms=659m Rser=0.0888324 Lser=0 mfg="KEMET" pn="C1825C473K1RAC" type="X7R"
+C9 NC_02 N006 0.1µ V=25 Irms=2.1 Rser=0.0606238 Lser=0 mfg="KEMET" pn="C1210C104K3RAC" type="X7R"
+R10 N007 0 50k
+.model D D
+.lib C:\Users\ryan\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NJF NJF
+.model PJF PJF
+.lib C:\Users\ryan\Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran 10ms
+* MID POT
+.backanno
+.end

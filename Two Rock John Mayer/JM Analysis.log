@@ -6,37 +6,30 @@ WARNING: Less than two connections to node NC_01.  This node is used by C5.
 Early termination of direct N-R iteration.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
-Gmin = 10
-Gmin = 1.07374
-Gmin = 0.115292
-Gmin = 0.0123794
-Gmin = 0.00132923
+Increasing initial diagonal Gmin to 100
+Gmin = 100
+Gmin = 10.7374
 vernier = 0.5
+Gmin = 1.80144
+vernier = 0.666667
+Gmin = 0.462512
+vernier = 0.888888
+vernier = 1
+vernier = 0.5
+Gmin = 0.0951406
 vernier = 0.25
 vernier = 0.125
 vernier = 0.0625
-Gmin = 0.00100083
 vernier = 0.03125
 vernier = 0.015625
 vernier = 0.0078125
 vernier = 0.00390625
 vernier = 0.00195313
-Gmin = 0.00100083
 vernier = 0.000976563
 vernier = 0.000488281
-Singular matrix:  Check nodes e:u20:3#branch and u20:5
-   Iteration No. 23
+Gmin = 0.0951406
 Gmin = 0
-Singular matrix:  Check nodes e:u20:3#branch and u20:5
-   Iteration No. 1
-Gmin stepping failed
-
-Starting source stepping with srcstepmethod=0
-Source Step = 3.0303%
-Source Step = 33.3333%
-Source Step = 63.6364%
-Source Step = 93.9394%
-Source stepping succeeded in finding the operating point.
+Gmin stepping succeeded in finding the operating point.
 
 .step wiper=0.1
 .step wiper=0.2
@@ -49,20 +42,21 @@ Source stepping succeeded in finding the operating point.
 .step wiper=0.9
 .step wiper=1
 
-Date: Sun Dec 18 11:35:50 2022
-Total elapsed time: 11.168 seconds.
+Date: Mon Nov 06 11:34:33 2023
+Total elapsed time: 9.429 seconds.
 
 tnom = 27
 temp = 27
-method = trap
-totiter = 1578
-traniter = 0
-tranpoints = 0
-accept = 0
-rejected = 0
+method = modified trap
+totiter = 3994
+traniter = 2408
+tranpoints = 1053
+accept = 1050
+rejected = 3
 matrix size = 300
-fillins = 2312
+fillins = 598
 solver = Normal
-Matrix Compiler1:   25780 opcodes
-Matrix Compiler2: 59.23 KB object code size  4.7/5.6/[2.7]
+Thread vector: 92.2/20.8[12] 8.4/3.9[12] 38.4/8.6[12] 2.2/2.2[1]  2592/500
+Matrix Compiler1: 62.25 KB object code size  19.2/13.7/[6.7]
+Matrix Compiler2: 30.88 KB object code size  7.2/7.7/[3.7]
 
