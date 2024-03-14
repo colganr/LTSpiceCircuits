@@ -1,0 +1,105 @@
+* A Collection of Potentiometers
+* ==============================
+* Barbarach 2021-05-05
+* The notable changes: pins numbered as per Alpha and Alps pin numbering.
+*     e.g: resistance between 1 and 2 insreases when pot rotated clockwise
+*          resistance between 1 and 2 decreases when pot rotated anti-clockwise
+* Added pot_alps_a and pot_alps_c models based on Alps datasheet (to the best of my abilities)
+*
+* based on work by:
+* Helmut Sennewald,                          12/23/2003         V1.1
+*
+*    Models:
+*       pot_lin          k*x
+*       pot_audio		 x^k
+*       pot_alps_a   piecewise linear - audio pot, datasheet
+*       pot_alps_c   piecewise linear - negative log pot, datasheet
+*    
+*
+*       1 ____    Set=0 
+*             |  
+*            | |  2
+*            | |<---- Set 0..1
+*            | |
+*       Rtap | |  Tap 
+*            | |
+*       3 ____|   Set=1
+*
+* 
+*     RT = total resistance
+*     Set = ratio of travel of the wiper
+*     RTAP = reference resistance at wiper=Tap
+*            It is needed only for pot_plog, pot_nlog and pot_pow.
+*            RTAP is measured between pin-3 and wiper.
+*     TAP = ratio of travel when Rtap is reached
+*
+*     All pots have this kind of layout unless noted otherwise
+* 0.0 -----> 1.0
+*        |2
+*      __V__
+*  1--|_____|--3
+*        
+*  o--R1-o-R2--o
+
+
+*--------------------- The Linear Potentiometer ---------------------
+*
+.SUBCKT pot_lin 1 2 3
+* Parameters: Rt, set
+.param w=limit(0,set,1)
+*
+R1 1 2 {Rt*(w) + 0.0001}
+R2 2 3 {Rt*(1-w) + 0.0001}
+.ENDS
+
+*--------------------- The Audio Potentiometer ---------------------
+* 
+* It is interesting to know that the power log. curve is a
+* good fit to so called "log"-potentiometers, because most of 
+* them have not true logarithm dependency in reality.
+*
+*  RTAP is resistance at travel TAP
+*  Example: Rt=10k, R=1k @ 0.5   (half way)
+*           RTAP=1k, TAP=0.5
+*  RTAP and TAP define a point of the curve resistance versus ratio.
+.SUBCKT pot_audio 1 2 3
+.param w=limit(0,set,1)
+*
+.param pwrexp=ln(RTAP/RT)/ln(TAP)
+.param ratio=w**pwrexp
+*
+R1 1 2 {Rt*ratio + 0.001}
+R2 2 3 {Rt*(1 - ratio) + 0.001}
+.ENDS
+
+*---------- An audio (log) Potentiometer from ALPS ---------
+*
+* ALPS shows three/four piecewise linear functions in their datasheet
+* for the resistance dependency. (taper 15A from datasheet)
+*
+.SUBCKT pot_alps_a 1 2 3
+* Parameters: Rt, Set
+.param w=limit(0,Set,1)
+*
+.param ratio=TABLE(w, 0.0,0.0,0.23,0.03,0.65,0.25,0.72,0.4, 
++ 0.95,0.99, 1.0,1.0)
+*
+R1 1 2 {Rt*(ratio) + 0.001}
+R2 2 3 {Rt*(1-ratio) + 0.001}
+.ENDS
+
+
+*---------- A reverse-audio (reverse-log) Potentiometer from ALPS ---------
+*
+* ALPS shows three/four piecewise linear functions in their datasheet
+* for the resistance dependency. (taper 15C from datasheet)
+*
+.SUBCKT pot_alps_c 1 2 3
+* Parameters: Rt, Set
+.param w=limit(0,Set,1)
+*
+.param ratio=TABLE(w, 0.0,1.0,0.05,0.99,0.28,0.4,0.35,0.25,0.77,0.03,1.0,0.0)
+*
+R1 1 2 {Rt*(1-ratio) + 0.001}
+R2 2 3 {Rt*(ratio) + 0.001}
+.ENDS
